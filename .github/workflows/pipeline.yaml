@@ -1,0 +1,16 @@
+name: Build Pipeline
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+#      - uses: ./
+#        with:
+#          input: template.json
+#          output: deployment.json
+#        env:
+#          VERSION: 1.2.3
+#          INSTANCE: dev/develop
+#      - run: cat deployment.json

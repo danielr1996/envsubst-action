@@ -1,0 +1,16 @@
+name: 'envsubst-action'
+description: wrapper for envsubst
+author: 'Daniel Richter'
+branding:
+  icon: 'terminal'
+  color: 'yellow'
+inputs:
+  input:
+    description: 'File to run substitutions on'
+    required: true
+  output:
+    description: 'File to write result to'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
