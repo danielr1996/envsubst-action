@@ -15,12 +15,12 @@ template.json
 .github/workflows/pipeline.yaml
 ```yaml
 - uses: danielr1996/envsubst-action@1.0.0
+  env:
+      VERSION: 1.2.3
+      INSTANCE: staging
   with:
     input: template.json
     output: deployment.json
-    env:
-      VERSION: 1.2.3
-      INSTANCE: staging
 ```
 
 
