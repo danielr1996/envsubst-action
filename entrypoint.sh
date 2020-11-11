@@ -1,3 +1,4 @@
 #!/bin/sh
 set -e
-envsubst < $INPUT_INPUT > $INPUT_OUTPUT
+envsubst < $INPUT_INPUT > tmp
+mv tmp $INPUT_OUTPUT
